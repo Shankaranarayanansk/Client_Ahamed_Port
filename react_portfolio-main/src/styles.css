@@ -1,0 +1,341 @@
+/* src/styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply font-Poppins scroll-smooth;
+  
+}
+body {
+  @apply box-border bg-gray-100;
+}
+.btn-primary {
+  @apply bg-gray-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
+}
+.swal2-popup.bw {
+  background-color: #000000; 
+  color: #fff; 
+  filter: grayscale(100%); 
+}
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(250, 250, 250, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; 
+  transition: opacity 1s ease, transform 1s ease; 
+  transform-origin: center center; 
+  transform: scale(0); 
+}
+
+.loading-overlay.visible {
+  opacity: 1; 
+  transform: scale(1); 
+}
+
+.loading-overlay.hidden {
+  opacity: 0; 
+  transform: scale(0); 
+  pointer-events: none; 
+}
+
+.circle{
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: #020304;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.aboutImg::after {
+  @apply content-[''] w-full left-0 top-0 rounded-xl rotate-12 h-full absolute bg-gray-600 -z-10;
+}
+
+.inputc{
+  @apply bg-gray-700 outline-none rounded-lg p-3;
+}
+
+::placeholder{
+  @apply text-lg;
+}
+
+::selection{
+  @apply bg-cyan-600;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar track */
+}
+
+/* Customize the scrollbar thumb (drag handle) */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 31, 32);
+  border-radius: 5px;
+}
+
+/* Customize the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(17, 18, 19);
+}
+
+
+.dance-animation{
+  transform: translateX(20px);
+  display: flex;
+}
+
+.dance-letter-1 {
+  border-radius: 100px 0 0 100px ;
+  animation: dance-letter-1 4s infinite alternate;
+}
+.dance-letter-2 {
+  animation: dance-letter-2 4s infinite alternate;
+}
+.dance-letter-3 {
+  animation: dance-letter-3 4s infinite alternate;
+}
+.dance-letter-4 {
+  animation: dance-letter-4 4s infinite alternate;
+}
+.dance-letter-5 {
+  animation: dance-letter-5 4s infinite alternate;
+}
+.dance-letter-6 {
+  animation: dance-letter-6 4s infinite alternate;
+}
+.dance-letter-7 {
+  animation: dance-letter-7 4s infinite alternate;
+}
+.dance-letter-8 {
+  animation: dance-letter-8 4s infinite alternate;
+}
+.dance-letter-9 {
+  animation: dance-letter-9 4s infinite alternate;
+}
+
+.dance-letter-0 {
+  border-radius:0 100px 100px 0; 
+  animation: dance-letter-0 4s infinite alternate;
+}
+
+@keyframes dance-letter-1 {
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: translateY(0vh);
+    color: white;
+  }
+  0% {
+    transform: translateY(-2vh);
+    color: rgb(97, 97, 97);
+    background-color: #494949;
+  }
+}
+
+@keyframes dance-letter-2 {
+  0%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: translateY(0vh);
+    color: white;
+  }
+
+  10% {
+    transform: translateY(-2vh);
+    color:rgb(97, 97, 97);
+    background-color: #494949;
+  }
+}
+@keyframes dance-letter-3 {
+  0%,
+  10%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: translateY(0vh);
+    color: white;
+  }
+
+  20% {
+    transform: translateY(-2vh);
+    color: rgb(97, 97, 97);
+    background-color: #494949;
+  }
+}
+@keyframes dance-letter-4 {
+  0%,
+  10%,
+  20%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: translateY(0vh);
+    color: white;
+  }
+
+  30% {
+    transform: translateY(-2vh);
+    color: rgb(97, 97, 97);
+    background-color: #494949;
+  }
+}
+@keyframes dance-letter-5 {
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: translateY(0vh);
+    color: white;
+  }
+
+  40% {
+    transform: translateY(-2vh);
+    color: rgb(97, 97, 97);
+    background-color: #494949;
+  }
+}
+@keyframes dance-letter-6 {
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  80%,
+  90%,
+  100% {
+    transform: translateY(0vh);
+    color: white;
+  }
+
+  50% {
+    transform: translateY(-2vh);
+    color: rgb(97, 97, 97);
+    background-color: #494949;
+  }
+}
+@keyframes dance-letter-7 {
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: translateY(0vh);
+    color: white;
+  }
+
+  60% {
+    transform: translateY(-2vh);
+    color: rgb(97, 97, 97);
+    background-color: #494949;
+  }
+}
+
+@keyframes dance-letter-8 {
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  80%,
+  90%,
+  100% {
+    transform: translateY(0vh);
+    color: white;
+  }
+
+  70% {
+    transform: translateY(-2vh);
+    color: rgb(97, 97, 97);
+    background-color: #494949;
+  }
+}
+@keyframes dance-letter-9 {
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  90%,
+  100% {
+    transform: translateY(0vh);
+    color: white;
+  }
+
+  80% {
+    transform: translateY(-2vh);
+    color: rgb(97, 97, 97);
+    background-color: #494949;
+  }
+}
+@keyframes dance-letter-0 {
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  100% {
+    transform: translateY(0vh);
+    color: white;
+  }
+
+  90% {
+    transform: translateY(-2vh);
+    color: rgb(97, 97, 97);
+    background-color: #494949;
+  }
+}
