@@ -27,7 +27,7 @@ function Hireme() {
         <div>
           <h2 className="text-2xl font-semibold">
             Do <span className="text-gray-900 font-bold text-3xl"></span>{" "}
-            Your College Students need to train by me
+            Your College Students need to be trained by me?
           </h2>
           <p className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6">
             Assistant Professor with 3 years at SAPC and APC College,
