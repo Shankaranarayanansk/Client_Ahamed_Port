@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles.css";
-
+import Ahamed1 from "../assets/images/Ahamed.png"
+import Ahamed2 from "../assets/images/Ahamed2.png"
 const technologies = [
   "Aptitude",
   "Verbal Reasoning",
@@ -90,13 +91,13 @@ function Hero() {
       <div className="flex-1 flex items-center justify-center h-full">
         {isMobileView ? (
           <img
-            src="/src/assets/images/Ahamed2.png"
+            src={Ahamed2}
             alt=""
             className="md:w-11/12 h-full object-cover"
           />
         ) : (
           <img
-            src="/src/assets/images/Ahamed.png"
+            src={Ahamed1}
             alt=""
             className="md:w-11/12 h-full object-cover"
           />

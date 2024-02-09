@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import AboutP from "../assets/images/hero.png";
+import CV from "../assets/images/SANYA AHAMED.pdf";
 
 function About() {
   const [projectCounts, setProjectCounts] = useState(0);
@@ -148,7 +149,7 @@ function About() {
               </div>
               <br />
               <br />
-              <a href="./src/assets/SANYA AHAMED.pdf" download>
+              <a href={CV} download>
                 <button className="btn-primary mt-5">Download CV</button>
               </a>
             </div>
